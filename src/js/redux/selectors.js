@@ -1,0 +1,1 @@
+export const selectOperations = (operations, id) => operations.filter(operation => operation.taskID === id);
