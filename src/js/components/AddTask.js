@@ -18,10 +18,13 @@ const AddTask = ({onAdd}) => {
 
     return (
         <form>
-            <h1>
-                <input style={{fontSize: "1em"}} placeholder={"Wprowadź zadanie"} type={"text"} onChange={handleChange}
-                       value={newTask}/>
-                <button style={{fontSize: "1em"}} onClick={handleSubmit}>Dodaj</button>
+            <h1 className={'text-center'}>
+                <div className={'input-group'}>
+                    <input className={'form-control'} placeholder={"Wprowadź zadanie"} type={"text"} onChange={handleChange}
+                           value={newTask}/>
+                    <button className={"btn btn-primary"} onClick={handleSubmit}>Dodaj</button>
+                </div>
+
             </h1>
         </form>
     )

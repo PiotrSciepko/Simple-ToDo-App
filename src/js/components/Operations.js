@@ -7,8 +7,7 @@ const Operations = ({taskID, operations}) => {
     return (
         <div>
             <ul>
-                {operations(taskID).map((operation, index) => <Operation
-                    key={'op' + index} operation={operation}/>)}
+                {operations(taskID).map((operation, index) => <Operation key={'op' + index} operation={operation}/>)}
             </ul>
         </div>
     );

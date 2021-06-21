@@ -14,7 +14,7 @@ const Operation = ({operation, onDone, onRemove}) => {
                     onClick={() => onDone(operation.id)}>{operation.name}
                 </li>
                 <button style={{display: "inline-block"}} disabled={!operation.isDone}
-                        onClick={() => handleRemove(operation.id)}>Usuń
+                        className={"btn btn-outline-danger"} onClick={() => handleRemove(operation.id)}>Usuń
                 </button>
         </div>
     );
